@@ -14,7 +14,6 @@ bool LoadBalancer::loadFromFile(const std::string &fileName) {
     std::ifstream file(fileName);
     if (!file.is_open()) return false;
 
-
     tableSize = 0;
     capacity = 0;
     depotId = -1;
@@ -29,8 +28,6 @@ bool LoadBalancer::loadFromFile(const std::string &fileName) {
     parseDemands(file);
     parseDepot(file);
     buildDistanceMatrix();
-
-
 
     file.close();
 

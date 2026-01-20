@@ -76,7 +76,7 @@ void Algorythm::initializePopulation() {
         for (int&g: genotype) {
             g = groups(rng);
         }
-        population.emplace_back(genotype, eval);
+        population.emplace_back(genotype, eval);//konstrukor indiviudal unikam kopii
     }
 }
 
